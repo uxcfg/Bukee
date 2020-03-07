@@ -8,6 +8,22 @@
 
 $white: #ffffff;
 $accent-clr: #65e496;
+$grey: #696980;
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
 
 .container {
 	width: 100%;
@@ -17,14 +33,13 @@ body {
 	font-family: "Roboto Slab", sans-serif;
 }
 header {
-    min-height: 1060px;
 	color: $white;
 	background-color: #536472;
-    background-image: linear-gradient(-60deg, #54b7a1 0%, #426384 100%);
+	background-image: linear-gradient(-60deg, #54b7a1 0%, #426384 100%);
 
 	z-index: 1;
-    padding-top: 53px;
-    padding-bottom: 162px;
+	padding-top: 53px;
+	padding-bottom: 162px;
 }
 
 .header__wrap {
@@ -99,51 +114,110 @@ header {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 44px;
-    letter-spacing: 0.9px;
-    
-    margin-bottom: 45px;
+	letter-spacing: 0.9px;
+
+	margin-bottom: 45px;
 }
-.block-about__text{
-    font-family: "Open Sans";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.75px;
+.block-about__text {
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.75px;
 
-    margin-bottom: 64px;
+	margin-bottom: 64px;
 }
-.button{
-    padding: 15px 26px;
-    
-    text-align: center;
-    text-decoration: none;
-    color: $white;
-    font-family: "Roboto Slab";
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.72px;
+.button {
+	padding: 15px 26px;
 
-    width: 250px;
-    height: 48px;
-    box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
-    border-radius: 3px;
-    background-color: #65e47d;
-    background-image: linear-gradient(to left, rgba(101, 228, 206, 0.7) 0%, rgba(101, 228, 161, 0.7) 100%);
-}
+	text-align: center;
+	text-decoration: none;
+	color: $white;
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.72px;
 
-.block-about__note{
-    font-family: "Open Sans";
-    font-size: 12px;
-    letter-spacing: 0.6px;
-
-    margin-top: 39px;
+	width: 250px;
+	height: 48px;
+	box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
+	border-radius: 3px;
+	background-color: #65e47d;
+	background-image: linear-gradient(
+		to left,
+		rgba(101, 228, 206, 0.7) 0%,
+		rgba(101, 228, 161, 0.7) 100%
+	);
 }
 
-.header-main__book{
-    display: block;
-    width: 445px;
-    height: 639px;
+.block-about__note {
+	font-family: "Open Sans";
+	font-size: 12px;
+	letter-spacing: 0.6px;
 
-    margin-right: 54px;
+	margin-top: 39px;
 }
 
+.header-main__book {
+	display: block;
+	border-radius: 5px;
+	margin-right: 54px;
+}
+
+// ABOUT
+.about {
+	padding: 180px 0 162px 0;
+}
+.about__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.button--size {
+	width: 238px;
+	height: 48px;
+
+	padding: 15px 30px;
+}
+.about-block {
+	margin-right: 69px;
+	margin-bottom: 203px;
+}
+.about_author--margin {
+	margin-bottom: 31px;
+}
+.about-block__img {
+	position: relative;
+	margin-top: 14px;
+}
+.about-block__img--bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate3d(44px, -48px, 0);
+
+	width: 435px;
+	height: 558px;
+	background-color: #44444f;
+	background-image: linear-gradient(-60deg, #5acab1 0%, #426384 100%);
+
+	z-index: -1;
+}
+.about-block__statistic {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.about-block__item__numb {
+	color: $accent-clr;
+	font-size: 80px;
+	font-weight: 100;
+	letter-spacing: 3.2px;
+
+	margin-bottom: 21px;
+}
+.about-block__item__text {
+	color: $grey;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.72px;
+}
