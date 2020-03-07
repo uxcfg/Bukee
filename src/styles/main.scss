@@ -5,3 +5,145 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+$white: #ffffff;
+$accent-clr: #65e496;
+
+.container {
+	width: 100%;
+	max-width: 1173px;
+}
+body {
+	font-family: "Roboto Slab", sans-serif;
+}
+header {
+    min-height: 1060px;
+	color: $white;
+	background-color: #536472;
+    background-image: linear-gradient(-60deg, #54b7a1 0%, #426384 100%);
+
+	z-index: 1;
+    padding-top: 53px;
+    padding-bottom: 162px;
+}
+
+.header__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 32px;
+
+	margin-bottom: 185px;
+}
+.header__logo {
+	display: block;
+	width: 137px;
+	height: 28px;
+
+	z-index: 99999;
+}
+.header-list {
+	display: flex;
+	list-style: none;
+}
+.header-list__link {
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+}
+.header-list__item {
+	margin-left: 15px;
+	padding-bottom: 8px;
+	cursor: pointer;
+	border-bottom: 3px solid transparent;
+	transition: border-bottom 0.1s linear;
+}
+.header-list__item.active {
+	border-bottom: 3px solid $accent-clr;
+}
+
+.header-list__item:hover {
+	border-bottom: 3px solid #65e496;
+}
+
+.block-book {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-about {
+	margin-right: 40px;
+}
+.block-about__author {
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.9px;
+
+	margin-bottom: 39px;
+}
+.block-about__title {
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.92px;
+
+	margin-bottom: 22px;
+}
+.block-about__subtitle {
+	color: $accent-clr;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 44px;
+    letter-spacing: 0.9px;
+    
+    margin-bottom: 45px;
+}
+.block-about__text{
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+
+    margin-bottom: 64px;
+}
+.button{
+    padding: 15px 26px;
+    
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+
+    width: 250px;
+    height: 48px;
+    box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
+    border-radius: 3px;
+    background-color: #65e47d;
+    background-image: linear-gradient(to left, rgba(101, 228, 206, 0.7) 0%, rgba(101, 228, 161, 0.7) 100%);
+}
+
+.block-about__note{
+    font-family: "Open Sans";
+    font-size: 12px;
+    letter-spacing: 0.6px;
+
+    margin-top: 39px;
+}
+
+.header-main__book{
+    display: block;
+    width: 445px;
+    height: 639px;
+
+    margin-right: 54px;
+}
+
